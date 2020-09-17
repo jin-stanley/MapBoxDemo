@@ -116,7 +116,7 @@ const MapBox = () => {
       <div className={classes.mapWrapper}>
         <ReactMapGL
           {...viewport}
-          mapboxApiAccessToken={process.env.REACT_APP_MAPTOKEN}
+          mapboxApiAccessToken="pk.eyJ1Ijoic3RhbmxleWppbiIsImEiOiJja2Y0dmo5Z2MwN3hvMzZueHo5ZW5iemh3In0.pHTnvfvjTy4vGbAhdtxDhA"
           mapStyle={mapStyle}
           onViewportChange={(viewport) => {
             setViewport(viewport);

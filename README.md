@@ -12,6 +12,7 @@
 - Two different map layer styles.
 - Mouseevent Navigation and map button Navigation.
 - Router are Provided for MapBox and analytics board.
+- CI/CD and Deploy on vercel.com
 
 #### next version will add:
 

@@ -20,6 +20,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import MapIcon from "@material-ui/icons/Map";
 import TimelineIcon from "@material-ui/icons/Timeline";
+import { withRouter } from "react-router";
 
 import { Link, useRouteMatch } from "react-router-dom";
 
@@ -37,8 +38,6 @@ const AppWrapper = (props) => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
-  let match = useRouteMatch();
 
   return (
     <div className={classes.root}>
@@ -61,9 +60,6 @@ const AppWrapper = (props) => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            Map-Box Demo
-          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -91,14 +87,42 @@ const AppWrapper = (props) => {
         <Divider />
         <List>
           {[
-            { name: "Map Box", url: "mapbox" },
-            { name: "Analytics", url: "analytics" },
+            { name: "Map Box", url: "/mapbox" },
+            { name: "Analytics", url: "/analytics" },
           ].map((item, index) => (
-            <Link key={index} to={`/${item.url}`} className={classes.link}>
-              <ListItem button>
+            <Link key={index} to={`${item.url}`} className={classes.link}>
+              <ListItem
+                button
+                style={
+                  props.location.pathname === item.url
+                    ? {
+                        background: "#fff",
+                        color: "#1F4B5C",
+                      }
+                    : { background: "#1F4B5C", color: "#fff" }
+                }
+              >
                 <ListItemIcon>
-                  {index === 0 && <MapIcon style={{ fill: "#fff" }} />}{" "}
-                  {index === 1 && <TimelineIcon style={{ fill: "#fff" }} />}
+                  {index === 0 && (
+                    <MapIcon
+                      style={{
+                        fill:
+                          props.location.pathname === item.url
+                            ? "#1F4B5C"
+                            : "#fff",
+                      }}
+                    />
+                  )}{" "}
+                  {index === 1 && (
+                    <TimelineIcon
+                      style={{
+                        fill:
+                          props.location.pathname === item.url
+                            ? "#1F4B5C"
+                            : "#fff",
+                      }}
+                    />
+                  )}
                 </ListItemIcon>
                 <ListItemText primary={item.name} />
               </ListItem>
@@ -183,4 +207,4 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default AppWrapper;
+export default withRouter(AppWrapper);

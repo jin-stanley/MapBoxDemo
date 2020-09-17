@@ -5,6 +5,8 @@ import SettingWrapper from "../SettingWrapper";
 
 const LayersPanel = (props) => {
   const classes = useStyles();
+
+  // Here Using mock data for now, we can catch real data by api
   const layerStyles = [
     {
       id: 1,

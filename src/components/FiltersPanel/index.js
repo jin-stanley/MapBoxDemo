@@ -14,6 +14,7 @@ import {
 const FiltersPanel = (props) => {
   const classes = useStyles();
 
+  // Here set form init value
   useEffect(() => {
     setFormValue(props.filters);
   }, [props.filters]);

@@ -22,13 +22,15 @@ import MapIcon from "@material-ui/icons/Map";
 import TimelineIcon from "@material-ui/icons/Timeline";
 import { withRouter } from "react-router";
 
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 
 const AppWrapper = (props) => {
   const classes = useStyles();
   const theme = useTheme();
+
+  // Here set different view of sidebar
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {

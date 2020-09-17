@@ -18,7 +18,10 @@ const mockData = mockDataJson.default.features;
 const MapBox = () => {
   const classes = useStyles();
 
+  // Here Using Local Json Data as MockData
   const [propertiesData, setPropertiesData] = useState(mockData);
+
+  // Here set Filter for data
   const [filters, setFilters] = useState({
     title_contains: "",
     stage: "",
@@ -28,14 +31,28 @@ const MapBox = () => {
     floor_area: [0, 0],
     site_area: [0, 0],
   });
+
+  // Here auto set all filter select items
   const [formSelects, setFormSelects] = useState({});
+
+  // Here set location Info Card open and closed
   const [inforDrawerOpen, setInforDrawerOpen] = useState(false);
+
+  // Here set item info (we will using hooks to fetch real data by ID in the future)
   const [propertyInfo, setPropertyInfo] = useState(null);
+
+  // Here set filter pannel open and closed
   const [filtersPannelOpen, setFiltersPannelOpen] = useState(false);
+
+  // Here set layers pannel open and closed
   const [layersPannelOpen, setLayersPannelOpen] = useState(false);
+
+  // Here set different map style, we provide 2 different view for now
   const [mapStyle, setMapStyle] = useState(
     "mapbox://styles/stanleyjin/ckf4wz3jn13wt19o4ha6xsp9q"
   );
+
+  // Here is the default view value for mapbox
   const [viewport, setViewport] = useState({
     latitude: -33.87,
     longitude: 151.207,
@@ -44,11 +61,13 @@ const MapBox = () => {
     zoom: 15,
   });
 
+  // Here update filter if users choose different condations.
   useEffect(() => {
     let newMockData = FilterHelper(mockData, filters);
     setPropertiesData(newMockData);
   }, [filters]);
 
+  // Here catch all select ittems auto by selectItemsCatcher
   useEffect(() => {
     let selectItemsGroup = selectItemsCatcher(mockData);
     setFormSelects(selectItemsGroup);

@@ -1,3 +1,6 @@
+/***
+ * Using for display location infomation
+ */
 import React, { useState, useRef, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Divider } from "@material-ui/core";

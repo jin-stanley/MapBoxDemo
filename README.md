@@ -67,8 +67,6 @@ npm run test
 Launches the test runner in the interactive watch mode.
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<<<<<<< HEAD
-
 For more infomation and scripts please checking: [create-react-app](https://github.com/facebook/create-react-app)
 
 ## License
@@ -76,7 +74,3 @@ For more infomation and scripts please checking: [create-react-app](https://gith
 MIT
 
 # **Just Enjopy Coding, Yo Yo Yo!**
-
-### demo link: "https://map-box-demo.vercel.app/mapbox"
-
-> > > > > > > master

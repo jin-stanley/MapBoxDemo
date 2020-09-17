@@ -4,7 +4,7 @@
 
 ###### demo link: "https://map-box-demo.vercel.app/mapbox"
 
-## version 0.1.0
+### version 0.1.0
 
 #### Feature
 
@@ -12,6 +12,7 @@
 - Two different map layer styles.
 - Mouseevent Navigation and map button Navigation.
 - Router are Provided for MapBox and analytics board.
+- CI/CD and Deploy on vercel.com
 
 #### next version will add:
 
@@ -67,16 +68,10 @@ npm run test
 Launches the test runner in the interactive watch mode.
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<<<<<<< HEAD
-
 For more infomation and scripts please checking: [create-react-app](https://github.com/facebook/create-react-app)
 
 ## License
 
 MIT
 
-# **Just Enjopy Coding, Yo Yo Yo!**
-
-### demo link: "https://map-box-demo.vercel.app/mapbox"
-
-> > > > > > > master
+#### **Just Enjopy Coding, Yo Yo Yo!**

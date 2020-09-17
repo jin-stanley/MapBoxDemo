@@ -76,8 +76,8 @@ const FiltersPanel = (props) => {
             <MenuItem value="">
               <em>None</em>
             </MenuItem>
-            {!!props.formSelects["Stages"] &&
-              props.formSelects.Stages.map((stage, key) => {
+            {props?.formSelects["Stages"] &&
+              props?.formSelects.Stages.map((stage, key) => {
                 return (
                   <MenuItem key={key} value={stage}>
                     {stage}

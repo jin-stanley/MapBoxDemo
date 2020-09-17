@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayersPanel can render success 1`] = `
+<div
+  className="makeStyles-container-5"
+>
+  <div
+    className="makeStyles-header-6"
+  >
+    <p>
+      Layers
+    </p>
+    <svg
+      className="makeStyles-closeIcon-8"
+      onClick={[Function]}
+    >
+      x.svg
+    </svg>
+  </div>
+  <div
+    className="makeStyles-content-7"
+  >
+    <div
+      className="makeStyles-container-1"
+    >
+      <div
+        className="makeStyles-layerItem-2"
+        onClick={[Function]}
+      >
+        <div
+          className="makeStyles-layerItemPic-3"
+          style={
+            Object {
+              "backgroundImage": "url(https://upload.wikimedia.org/wikipedia/commons/c/c3/%E9%95%87%E5%B7%B4_%E5%8D%AB%E6%98%9F%E5%9B%BE.JPG)",
+            }
+          }
+        />
+        <div
+          className="makeStyles-layerItemName-4"
+          style={
+            Object {
+              "color": false,
+            }
+          }
+        >
+          Satellite View
+        </div>
+      </div>
+      <div
+        className="makeStyles-layerItem-2"
+        onClick={[Function]}
+      >
+        <div
+          className="makeStyles-layerItemPic-3"
+          style={
+            Object {
+              "backgroundImage": "url(https://crmfile.alicdn.com/crmfile-open/wmqbbs/windid/1809/thread/309_2645085_d232b975e15394a.jpg)",
+            }
+          }
+        />
+        <div
+          className="makeStyles-layerItemName-4"
+          style={
+            Object {
+              "color": false,
+            }
+          }
+        >
+          Simple View
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

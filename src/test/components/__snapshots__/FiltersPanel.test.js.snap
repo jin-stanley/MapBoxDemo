@@ -1,0 +1,699 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiltersPanel can render success 1`] = `
+<div
+  className="makeStyles-container-6"
+>
+  <div
+    className="makeStyles-header-7"
+  >
+    <p>
+      Filters
+    </p>
+    <svg
+      className="makeStyles-closeIcon-9"
+      onClick={[Function]}
+    >
+      x.svg
+    </svg>
+  </div>
+  <div
+    className="makeStyles-content-8"
+  >
+    <div
+      className="makeStyles-container-1"
+    >
+      <div
+        className="makeStyles-controllerWrapper-2"
+      >
+        <div
+          className="makeStyles-controllerName-3"
+        >
+          Title Contains: 
+        </div>
+        <div
+          className="MuiFormControl-root MuiTextField-root makeStyles-controller-4 MuiFormControl-marginDense"
+        >
+          <div
+            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+            onClick={[Function]}
+          >
+            <input
+              aria-invalid={false}
+              autoFocus={false}
+              className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+              disabled={false}
+              onAnimationStart={[Function]}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden={true}
+              className="PrivateNotchedOutline-root-10 MuiOutlinedInput-notchedOutline"
+              style={
+                Object {
+                  "paddingLeft": 8,
+                }
+              }
+            >
+              <legend
+                className="PrivateNotchedOutline-legend-11"
+                style={
+                  Object {
+                    "width": 0.01,
+                  }
+                }
+              >
+                <span
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "&#8203;",
+                    }
+                  }
+                />
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div
+        className="makeStyles-controllerWrapper-2"
+      >
+        <div
+          className="makeStyles-controllerName-3"
+        >
+          Stage: 
+        </div>
+        <div
+          className="MuiInputBase-root MuiOutlinedInput-root makeStyles-controller-4 MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+          onClick={[Function]}
+        >
+          <div
+            aria-haspopup="listbox"
+            className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&#8203;",
+                }
+              }
+            />
+          </div>
+          <input
+            aria-hidden={true}
+            className="MuiSelect-nativeInput"
+            onAnimationStart={[Function]}
+            onChange={[Function]}
+            tabIndex={-1}
+            value=""
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden={true}
+            className="PrivateNotchedOutline-root-10 MuiOutlinedInput-notchedOutline"
+            style={
+              Object {
+                "paddingLeft": 8,
+              }
+            }
+          >
+            <legend
+              className="PrivateNotchedOutline-legend-11"
+              style={
+                Object {
+                  "width": 0.01,
+                }
+              }
+            >
+              <span
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&#8203;",
+                  }
+                }
+              />
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        className="makeStyles-controllerWrapper-2"
+      >
+        <div
+          className="makeStyles-controllerName-3"
+        >
+          Ownership: 
+        </div>
+        <div
+          className="MuiInputBase-root MuiOutlinedInput-root makeStyles-controller-4 MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+          onClick={[Function]}
+        >
+          <div
+            aria-haspopup="listbox"
+            className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&#8203;",
+                }
+              }
+            />
+          </div>
+          <input
+            aria-hidden={true}
+            className="MuiSelect-nativeInput"
+            onAnimationStart={[Function]}
+            onChange={[Function]}
+            tabIndex={-1}
+            value=""
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden={true}
+            className="PrivateNotchedOutline-root-10 MuiOutlinedInput-notchedOutline"
+            style={
+              Object {
+                "paddingLeft": 8,
+              }
+            }
+          >
+            <legend
+              className="PrivateNotchedOutline-legend-11"
+              style={
+                Object {
+                  "width": 0.01,
+                }
+              }
+            >
+              <span
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&#8203;",
+                  }
+                }
+              />
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        className="makeStyles-controllerWrapper-2"
+      >
+        <div
+          className="makeStyles-controllerName-3"
+        >
+          Dev. Type: 
+        </div>
+        <div
+          className="MuiInputBase-root MuiOutlinedInput-root makeStyles-controller-4 MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+          onClick={[Function]}
+        >
+          <div
+            aria-haspopup="listbox"
+            className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&#8203;",
+                }
+              }
+            />
+          </div>
+          <input
+            aria-hidden={true}
+            className="MuiSelect-nativeInput"
+            onAnimationStart={[Function]}
+            onChange={[Function]}
+            tabIndex={-1}
+            value=""
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden={true}
+            className="PrivateNotchedOutline-root-10 MuiOutlinedInput-notchedOutline"
+            style={
+              Object {
+                "paddingLeft": 8,
+              }
+            }
+          >
+            <legend
+              className="PrivateNotchedOutline-legend-11"
+              style={
+                Object {
+                  "width": 0.01,
+                }
+              }
+            >
+              <span
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&#8203;",
+                  }
+                }
+              />
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        className="makeStyles-controllerWrapper-2"
+      >
+        <div
+          className="makeStyles-controllerName-3"
+        >
+          Value:
+          <br />
+          <span>
+            (
+            0 - 100
+            )
+          </span>
+        </div>
+        <div
+          className="makeStyles-controller-4"
+        >
+          <span
+            className="MuiSlider-root MuiSlider-colorPrimary"
+            onMouseDown={[Function]}
+          >
+            <span
+              className="MuiSlider-rail"
+            />
+            <span
+              className="MuiSlider-track"
+              style={
+                Object {
+                  "left": "0%",
+                  "width": "10%",
+                }
+              }
+            />
+            <input
+              type="hidden"
+              value="0,100"
+            />
+            <span
+              aria-labelledby="range-slider"
+              aria-orientation="horizontal"
+              aria-valuemax={1000}
+              aria-valuemin={0}
+              aria-valuenow={0}
+              className="MuiSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-14"
+              data-index={0}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              role="slider"
+              style={
+                Object {
+                  "left": "0%",
+                }
+              }
+              tabIndex={0}
+            >
+              <span
+                className="PrivateValueLabel-offset-16 MuiSlider-valueLabel"
+              >
+                <span
+                  className="PrivateValueLabel-circle-17"
+                >
+                  <span
+                    className="PrivateValueLabel-label-18"
+                  >
+                    0
+                  </span>
+                </span>
+              </span>
+            </span>
+            <span
+              aria-labelledby="range-slider"
+              aria-orientation="horizontal"
+              aria-valuemax={1000}
+              aria-valuemin={0}
+              aria-valuenow={100}
+              className="MuiSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-14"
+              data-index={1}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              role="slider"
+              style={
+                Object {
+                  "left": "10%",
+                }
+              }
+              tabIndex={0}
+            >
+              <span
+                className="PrivateValueLabel-offset-16 MuiSlider-valueLabel"
+              >
+                <span
+                  className="PrivateValueLabel-circle-17"
+                >
+                  <span
+                    className="PrivateValueLabel-label-18"
+                  >
+                    100
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="makeStyles-controllerWrapper-2"
+      >
+        <div
+          className="makeStyles-controllerName-3"
+        >
+          Floor Area:
+          <br />
+          <span>
+            (
+            0 - 100
+            )
+          </span>
+        </div>
+        <div
+          className="makeStyles-controller-4"
+        >
+          <span
+            className="MuiSlider-root MuiSlider-colorPrimary"
+            onMouseDown={[Function]}
+          >
+            <span
+              className="MuiSlider-rail"
+            />
+            <span
+              className="MuiSlider-track"
+              style={
+                Object {
+                  "left": "0%",
+                  "width": "100%",
+                }
+              }
+            />
+            <input
+              type="hidden"
+              value="1,2"
+            />
+            <span
+              aria-labelledby="range-slider"
+              aria-orientation="horizontal"
+              aria-valuemax={2}
+              aria-valuemin={1}
+              aria-valuenow={1}
+              className="MuiSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-14"
+              data-index={0}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              role="slider"
+              style={
+                Object {
+                  "left": "0%",
+                }
+              }
+              tabIndex={0}
+            >
+              <span
+                className="PrivateValueLabel-offset-16 MuiSlider-valueLabel"
+              >
+                <span
+                  className="PrivateValueLabel-circle-17"
+                >
+                  <span
+                    className="PrivateValueLabel-label-18"
+                  >
+                    1
+                  </span>
+                </span>
+              </span>
+            </span>
+            <span
+              aria-labelledby="range-slider"
+              aria-orientation="horizontal"
+              aria-valuemax={2}
+              aria-valuemin={1}
+              aria-valuenow={2}
+              className="MuiSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-14"
+              data-index={1}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              role="slider"
+              style={
+                Object {
+                  "left": "100%",
+                }
+              }
+              tabIndex={0}
+            >
+              <span
+                className="PrivateValueLabel-offset-16 MuiSlider-valueLabel"
+              >
+                <span
+                  className="PrivateValueLabel-circle-17"
+                >
+                  <span
+                    className="PrivateValueLabel-label-18"
+                  >
+                    2
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="makeStyles-controllerWrapper-2"
+      >
+        <div
+          className="makeStyles-controllerName-3"
+        >
+          Site Area:
+          <br />
+          <span>
+            (
+            0 - 100
+            )
+          </span>
+        </div>
+        <div
+          className="makeStyles-controller-4"
+        >
+          <span
+            className="MuiSlider-root MuiSlider-colorPrimary"
+            onMouseDown={[Function]}
+          >
+            <span
+              className="MuiSlider-rail"
+            />
+            <span
+              className="MuiSlider-track"
+              style={
+                Object {
+                  "left": "NaN%",
+                  "width": "NaN%",
+                }
+              }
+            />
+            <input
+              type="hidden"
+              value="1000,1000"
+            />
+            <span
+              aria-labelledby="range-slider"
+              aria-orientation="horizontal"
+              aria-valuemax={1000}
+              aria-valuemin={1000}
+              aria-valuenow={1000}
+              className="MuiSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-14"
+              data-index={0}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              role="slider"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+              tabIndex={0}
+            >
+              <span
+                className="PrivateValueLabel-offset-16 MuiSlider-valueLabel"
+              >
+                <span
+                  className="PrivateValueLabel-circle-17"
+                >
+                  <span
+                    className="PrivateValueLabel-label-18"
+                  >
+                    1000
+                  </span>
+                </span>
+              </span>
+            </span>
+            <span
+              aria-labelledby="range-slider"
+              aria-orientation="horizontal"
+              aria-valuemax={1000}
+              aria-valuemin={1000}
+              aria-valuenow={1000}
+              className="MuiSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-14"
+              data-index={1}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              role="slider"
+              style={
+                Object {
+                  "left": "NaN%",
+                }
+              }
+              tabIndex={0}
+            >
+              <span
+                className="PrivateValueLabel-offset-16 MuiSlider-valueLabel"
+              >
+                <span
+                  className="PrivateValueLabel-circle-17"
+                >
+                  <span
+                    className="PrivateValueLabel-label-18"
+                  >
+                    1000
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <hr
+      className="MuiDivider-root"
+    />
+    <div
+      className="makeStyles-ButtonWrapper-5"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Cancel
+        </span>
+      </button>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Confirm
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

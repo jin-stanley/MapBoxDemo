@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingWrapper can render success 1`] = `
+<div
+  className="makeStyles-container-1"
+>
+  <div
+    className="makeStyles-header-2"
+  >
+    <p />
+    <svg
+      className="makeStyles-closeIcon-4"
+      onClick={[Function]}
+    >
+      x.svg
+    </svg>
+  </div>
+  <div
+    className="makeStyles-content-3"
+  />
+</div>
+`;

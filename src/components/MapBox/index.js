@@ -162,7 +162,6 @@ const useStyles = makeStyles({
     flexDirection: "row",
     width: "100%",
     height: "100%",
-    position: "relative",
   },
   mapWrapper: {
     width: "100%",
@@ -175,8 +174,8 @@ const useStyles = makeStyles({
   },
   navigationWrapper: {
     position: "absolute",
-    top: 16,
-    right: 16,
+    bottom: 16,
+    left: 16,
     "& div button": {
       outline: "none",
     },

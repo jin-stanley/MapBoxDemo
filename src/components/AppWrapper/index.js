@@ -1,22 +1,27 @@
 import React from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import List from "@material-ui/core/List";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import IconButton from "@material-ui/core/IconButton";
+import {
+  Drawer,
+  AppBar,
+  Toolbar,
+  List,
+  CssBaseline,
+  Typography,
+  Divider,
+  IconButton,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@material-ui/core";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
+import MapIcon from "@material-ui/icons/Map";
+import TimelineIcon from "@material-ui/icons/Timeline";
 
-import StreetviewIcon from "@material-ui/icons/Streetview";
+import { Link, useRouteMatch } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -32,6 +37,8 @@ const AppWrapper = (props) => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  let match = useRouteMatch();
 
   return (
     <div className={classes.root}>
@@ -75,21 +82,27 @@ const AppWrapper = (props) => {
         <div className={classes.toolbar}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "rtl" ? (
-              <ChevronRightIcon />
+              <ChevronRightIcon style={{ fill: "#fff" }} />
             ) : (
-              <ChevronLeftIcon />
+              <ChevronLeftIcon style={{ fill: "#fff" }} />
             )}
           </IconButton>
         </div>
         <Divider />
         <List>
-          {["Map-Box"].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                <StreetviewIcon />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
+          {[
+            { name: "Map Box", url: "mapbox" },
+            { name: "Analytics", url: "analytics" },
+          ].map((item, index) => (
+            <Link key={index} to={`/${item.url}`} className={classes.link}>
+              <ListItem button>
+                <ListItemIcon>
+                  {index === 0 && <MapIcon style={{ fill: "#fff" }} />}{" "}
+                  {index === 1 && <TimelineIcon style={{ fill: "#fff" }} />}
+                </ListItemIcon>
+                <ListItemText primary={item.name} />
+              </ListItem>
+            </Link>
           ))}
         </List>
       </Drawer>
@@ -135,6 +148,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    background: "#1F4B5C",
   },
   drawerClose: {
     transition: theme.transitions.create("width", {
@@ -142,10 +156,9 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     overflowX: "hidden",
-    width: theme.spacing(7) + 1,
-    [theme.breakpoints.up("sm")]: {
-      width: theme.spacing(9) + 1,
-    },
+
+    width: "56px",
+    background: "#1F4B5C",
   },
   toolbar: {
     display: "flex",
@@ -160,6 +173,13 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100vh",
     paddingTop: "64px",
+  },
+  link: {
+    color: "#fff",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "none",
+    },
   },
 }));
 

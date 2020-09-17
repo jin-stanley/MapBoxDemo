@@ -84,11 +84,61 @@ const MapBox = () => {
   };
 
   return (
-    <div className={classes.container}>
-      <MapTooBox
-        toggleFiltersPannel={toggleFiltersPannel}
-        toggleLayersPannel={toggleLayersPannel}
-      />
+    <React.Fragment>
+      <div className={classes.container}>
+        <MapTooBox
+          toggleFiltersPannel={toggleFiltersPannel}
+          toggleLayersPannel={toggleLayersPannel}
+        />
+
+        {inforDrawerOpen && (
+          <InfoCard
+            info={propertyInfo}
+            handleCloseInfoCard={handleCloseInfoCard}
+          />
+        )}
+
+        <div className={classes.mapWrapper}>
+          <ReactMapGL
+            {...viewport}
+            mapboxApiAccessToken="pk.eyJ1Ijoic3RhbmxleWppbiIsImEiOiJja2Y0dmo5Z2MwN3hvMzZueHo5ZW5iemh3In0.pHTnvfvjTy4vGbAhdtxDhA"
+            mapStyle={mapStyle}
+            onViewportChange={(viewport) => {
+              setViewport(viewport);
+            }}
+          >
+            {propertiesData.map((data) => {
+              return (
+                <Marker
+                  key={data.properties.id}
+                  longitude={data.geometry.coordinates[0]}
+                  latitude={data.geometry.coordinates[1]}
+                >
+                  {propertyInfo?.properties.id !== data.properties.id ? (
+                    <LocationLogo
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleOpenInfoCard(data);
+                      }}
+                      className={classes.logo}
+                    />
+                  ) : (
+                    <PinLogo className={classes.logo} />
+                  )}
+                </Marker>
+              );
+            })}
+            <div className={classes.navigationWrapper}>
+              <NavigationControl
+                onViewportChange={(viewport) => {
+                  setViewport(viewport);
+                }}
+              />
+            </div>
+          </ReactMapGL>
+        </div>
+      </div>
+
       {filtersPannelOpen && (
         <FiltersPanel
           filters={filters}
@@ -105,54 +155,7 @@ const MapBox = () => {
           handleChangeLayerStyle={handleChangeLayerStyle}
         />
       )}
-
-      {inforDrawerOpen && (
-        <InfoCard
-          info={propertyInfo}
-          handleCloseInfoCard={handleCloseInfoCard}
-        />
-      )}
-
-      <div className={classes.mapWrapper}>
-        <ReactMapGL
-          {...viewport}
-          mapboxApiAccessToken="pk.eyJ1Ijoic3RhbmxleWppbiIsImEiOiJja2Y0dmo5Z2MwN3hvMzZueHo5ZW5iemh3In0.pHTnvfvjTy4vGbAhdtxDhA"
-          mapStyle={mapStyle}
-          onViewportChange={(viewport) => {
-            setViewport(viewport);
-          }}
-        >
-          {propertiesData.map((data) => {
-            return (
-              <Marker
-                key={data.properties.id}
-                longitude={data.geometry.coordinates[0]}
-                latitude={data.geometry.coordinates[1]}
-              >
-                {propertyInfo?.properties.id !== data.properties.id ? (
-                  <LocationLogo
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleOpenInfoCard(data);
-                    }}
-                    className={classes.logo}
-                  />
-                ) : (
-                  <PinLogo className={classes.logo} />
-                )}
-              </Marker>
-            );
-          })}
-          <div className={classes.navigationWrapper}>
-            <NavigationControl
-              onViewportChange={(viewport) => {
-                setViewport(viewport);
-              }}
-            />
-          </div>
-        </ReactMapGL>
-      </div>
-    </div>
+    </React.Fragment>
   );
 };
 
@@ -162,6 +165,7 @@ const useStyles = makeStyles({
     flexDirection: "row",
     width: "100%",
     height: "100%",
+    position: "relative",
   },
   mapWrapper: {
     width: "100%",

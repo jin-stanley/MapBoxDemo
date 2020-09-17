@@ -49,14 +49,14 @@ const useStyles = makeStyles({
     },
   },
   layers: {
-    position: "absolute",
+    position: "fixed",
     bottom: "30px",
     right: "30px",
     display: "flex",
     flexDirection: "column",
   },
   filters: {
-    position: "absolute",
+    position: "fixed",
     bottom: "30px",
     right: "120px",
     display: "flex",

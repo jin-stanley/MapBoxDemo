@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapBox can render success 1`] = `
+<div
+  className="makeStyles-container-1"
+>
+  <div
+    className="makeStyles-filters-7 makeStyles-settingWrapper-5"
+    onClick={[Function]}
+  >
+    <svg
+      className="makeStyles-logo-8"
+    >
+      levels.svg
+    </svg>
+    <div>
+      Filters
+    </div>
+  </div>
+  <div
+    className="makeStyles-layers-6 makeStyles-settingWrapper-5"
+    onClick={[Function]}
+  >
+    <svg
+      className="makeStyles-logo-8"
+    >
+      layers.svg
+    </svg>
+    <div>
+      Layers
+    </div>
+  </div>
+  <div
+    className="makeStyles-mapWrapper-2"
+  >
+    <div
+      style={
+        Object {
+          "cursor": "grab",
+          "height": 0,
+          "position": "relative",
+          "width": 0,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className=""
+          style={
+            Object {
+              "height": "100%",
+              "overflow": "hidden",
+              "position": "absolute",
+              "visibility": "inherit",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          style={
+            Object {
+              "height": 0,
+              "overflow": "visible",
+              "width": 0,
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

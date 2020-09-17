@@ -1,3 +1,7 @@
+/***
+ * Using for display common wrapper which including topbar and sidebar
+ */
+
 import React from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -7,7 +11,6 @@ import {
   Toolbar,
   List,
   CssBaseline,
-  Typography,
   Divider,
   IconButton,
   ListItem,

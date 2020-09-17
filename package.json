@@ -18,6 +18,7 @@
     "react-map-gl": "^5.2.8",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-test-renderer": "^16.13.1",
     "sass": "^1.26.10",
     "use-supercluster": "^0.2.8"
   },

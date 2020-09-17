@@ -8,7 +8,6 @@ import { ReactComponent as CloeseLogo } from "../../img/svg/x.svg";
 
 const InfoCard = (props) => {
   const { info } = props;
-  const { properties } = info;
 
   // Here using ref to catch hight of header and using calc getting body height (100% - header.height)
   const headerRef = useRef(null);
@@ -25,12 +24,14 @@ const InfoCard = (props) => {
   // Here return the data what we need
   const DetailsData = () => {
     let result = [];
-    for (const [key, value] of Object.entries(properties.project)) {
-      let obj = {
-        key,
-        value,
-      };
-      result.push(obj);
+    if (info?.properties.project) {
+      for (const [key, value] of Object.entries(info.properties.project)) {
+        let obj = {
+          key,
+          value,
+        };
+        result.push(obj);
+      }
     }
 
     return result;
@@ -47,8 +48,10 @@ const InfoCard = (props) => {
         <CloeseLogo />
       </div>
       <div ref={headerRef}>
-        <div className={classes.header}>{properties.project.Type}</div>
-        <div className={classes.subheader}>{properties.project.Title}</div>
+        <div className={classes.header}>{info?.properties.project.Type}</div>
+        <div className={classes.subheader}>
+          {info?.properties.project.Title}
+        </div>
         <br />
         <Divider />
       </div>

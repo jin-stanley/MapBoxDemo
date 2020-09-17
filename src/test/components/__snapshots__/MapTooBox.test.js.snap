@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapTooBox can render success 1`] = `
+Array [
+  <div
+    className="makeStyles-filters-3 makeStyles-settingWrapper-1"
+  >
+    <svg
+      className="makeStyles-logo-4"
+    >
+      levels.svg
+    </svg>
+    <div>
+      Filters
+    </div>
+  </div>,
+  <div
+    className="makeStyles-layers-2 makeStyles-settingWrapper-1"
+  >
+    <svg
+      className="makeStyles-logo-4"
+    >
+      layers.svg
+    </svg>
+    <div>
+      Layers
+    </div>
+  </div>,
+]
+`;

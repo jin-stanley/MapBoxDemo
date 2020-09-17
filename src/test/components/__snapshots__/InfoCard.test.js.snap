@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCard can render success 1`] = `
+<div
+  className="makeStyles-drawerWrapper-1"
+>
+  <div
+    className="makeStyles-closeIcon-2"
+    onClick={[Function]}
+  >
+    <svg>
+      x.svg
+    </svg>
+  </div>
+  <div>
+    <div
+      className="makeStyles-header-3"
+    />
+    <div
+      className="makeStyles-subheader-4"
+    />
+    <br />
+    <hr
+      className="MuiDivider-root"
+    />
+  </div>
+  <div
+    className="makeStyles-detailsWrapper-5 makeStyles-detailsWrapper-10"
+  >
+    <div
+      className="makeStyles-details-6"
+    />
+  </div>
+</div>
+`;

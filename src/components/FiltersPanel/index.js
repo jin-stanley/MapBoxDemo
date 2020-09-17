@@ -1,3 +1,6 @@
+/***
+ * Using for display filter form
+ */
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -239,7 +242,7 @@ const FiltersPanel = (props) => {
 const useStyles = makeStyles({
   container: {
     height: "320px",
-    minWidth: "360px",
+    minWidth: "240px",
     position: "relative",
     flex: "1 1 0",
     overflow: "auto",

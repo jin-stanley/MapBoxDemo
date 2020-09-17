@@ -1,6 +1,8 @@
+/***
+ * Using for FilterButton and LayersButton
+ */
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-
 import { ReactComponent as CloeseLogo } from "../../img/svg/x.svg";
 
 const SettingWrapper = (props) => {
@@ -43,8 +45,8 @@ const useStyles = makeStyles({
     position: "relative",
   },
   content: {
-    height:"100%",
-    padding: "16px",
+    height: "100%",
+    padding: "8px",
   },
   closeIcon: {
     position: "absolute",

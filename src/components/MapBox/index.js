@@ -1,3 +1,6 @@
+/***
+ * Using for display Mapbox and locations pin, also is one container to display main fetures
+ */
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, NavigationControl } from "react-map-gl";
 import { makeStyles } from "@material-ui/core/styles";

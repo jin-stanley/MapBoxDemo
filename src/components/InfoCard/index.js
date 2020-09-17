@@ -7,6 +7,7 @@ const InfoCard = (props) => {
   const { info } = props;
   const { properties } = info;
 
+  // Here using ref to catch hight of header and using calc getting body height (100% - header.height)
   const headerRef = useRef(null);
   const [headerHeight, setHeaderHeight] = useState(0);
 
@@ -18,6 +19,7 @@ const InfoCard = (props) => {
 
   const classes = useStyles({ headerHeight });
 
+  // Here return the data what we need
   const DetailsData = () => {
     let result = [];
     for (const [key, value] of Object.entries(properties.project)) {

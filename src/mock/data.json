@@ -1,0 +1,189 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "7426971",
+                "project": {
+                    "Project ID": "7426971",
+                    "Title": "HELLENIC CLUB",
+                    "Type": "RESTAURANT - altns & addns",
+                    "Address": "238-240 Castlereagh St (Lot 1 DP187103)",
+                    "Suburb": "SYDNEY",
+                    "State": "New South Wales",
+                    "Stage": "DA Approved",
+                    "Category": "HOSPITALITY",
+                    "SubCategory": "RESTAURANTS, CANTEENS",
+                    "Status": "Possible",
+                    "Council": "SYDNEY",
+                    "Dev. Type": "Addition",
+                    "Floor Area": "2042.000",
+                    "Site Area": "567.690",
+                    "Storeys": "0.000",
+                    "Units": "0.000",
+                    "Commence Date": "06\/05\/20",
+                    "Completion Date": "06\/11\/21",
+                    "Last Updated": "10\/09\/19",
+                    "Value": "2720.000",
+                    "Ownership": "PRIVATE",
+                    "Description": "Alterations & additions of unused Levels 2-3 at the existing Australian Workers Union building & Hellenic Club restaurant. Level 1 - New cool room & freezer room to the mezzanine. Level 2 - New balcony in the existing void, new service bar & glass store, new water closets, new kitchen prep area & creation of Level 2 mezzanine with storerooms. Level 3 - Demolition of some existing external walls & 2 dilapidated trusses. Refurbishment & rehabilitation of 2 existing trusses. Creation of a service kitchen, lounge bar, boardroom, courtyard seating area & new water closets & 3 meeting rooms. Refurbishment & relocation of windows from the existing meeting room wall to the relocated meeting room. Creation of a Level 3 mezzanine with meeting room, office, water closet & staff change rooms. Roof - Install new plant equipment & lift services on the roof. Demolish existing central hipped roof & install glazed & operable skylights in the roof. Metal profiled sheet for wall cladding & roofing, aluminium flashings, window framing & gutters, glass panels & timber framed windows & doors.",
+                    "Notes": "DEVELOPMENT APPROVAL (CONDITIONAL)",
+                    "Additional Details": "Development Application Number D\/2019\/521.",
+                    "Lat": -33.875305,
+                    "Long": 151.209152
+                },
+                "color": "#26A31B"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    151.209152,
+                    -33.875305
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "7460794",
+                "project": {
+                    "Project ID": "7460794",
+                    "Title": "YORK STREET COMMERCIAL BUILDING",
+                    "Type": "COMMERCIAL BUILDING - altns & addns",
+                    "Address": "32-34 York St (Lot 22 DP801935)",
+                    "Suburb": "SYDNEY",
+                    "State": "New South Wales",
+                    "Stage": "DA Pending",
+                    "Category": "COMMERCIAL PREMISES",
+                    "SubCategory": "COMMERCIAL COMPLEXES - SHOPS, OFFICES",
+                    "Status": "Possible",
+                    "Council": "SYDNEY",
+                    "Dev. Type": "Addition",
+                    "Floor Area": "6010.000",
+                    "Site Area": "622.000",
+                    "Storeys": "1.000",
+                    "Units": "0.000",
+                    "Commence Date": "23\/08\/20",
+                    "Completion Date": "23\/08\/23",
+                    "Last Updated": "09\/09\/19",
+                    "Value": "3554.000",
+                    "Ownership": "PRIVATE",
+                    "Description": "Proposed alterations & additions to the existing commercial building. A new street facade including a new awning of the same height & extent as the existing awning. An additional level (425sq m) to the existing building which is setback from the front facade by 4m & includes a terrace in the setback area & a plant screen enclosure above.",
+                    "Notes": "DEVELOPMENT APPLICATION SUBMITTED",
+                    "Additional Details": "Development Application Number D\/2019\/927. Construction timeframe is a research estimate only & subject to council approvals & other factors.",
+                    "Lat": -33.86906,
+                    "Long": 151.206326
+                },
+                "color": "#E9DF00"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    151.206326,
+                    -33.86906
+                ]
+            }
+        }
+    ],
+    "analytics": {
+        "total": 277,
+        "lineCharts": [
+            {
+                "rawCount": 107,
+                "label": "DA Approved",
+                "percentage": "38%",
+                "color": "#26A31B"
+            },
+            {
+                "rawCount": 20,
+                "label": "DA Pending",
+                "percentage": "7%",
+                "color": "#E9DF00"
+            }
+        ],
+        "barCharts": [
+            {
+                "bins": [
+                    {
+                        "min": 95000,
+                        "max": 29031516,
+                        "count": 228,
+                        "isMedian": true
+                    },
+                    {
+                        "min": 29031516,
+                        "max": 57968032,
+                        "count": 17,
+                        "isMedian": false
+                    }
+                ],
+                "stats": {
+                    "minimumCount": 0,
+                    "maximumCount": 228,
+                    "maximumValue": 955000000,
+                    "minimumValue": 95000,
+                    "median": 2100000
+                },
+                "title": "Project by Price",
+                "color": "#8AD069"
+            },
+            {
+                "bins": [
+                    {
+                        "min": 0.02,
+                        "max": 4.02,
+                        "count": 34,
+                        "isMedian": false
+                    },
+                    {
+                        "min": 4.02,
+                        "max": 8.02,
+                        "count": 14,
+                        "isMedian": false
+                    },
+                    {
+                        "min": 112.02,
+                        "max": 116.02,
+                        "count": 1,
+                        "isMedian": false
+                    }
+                ],
+                "stats": {
+                    "minimumCount": 0,
+                    "maximumCount": 34,
+                    "maximumValue": "115.84",
+                    "minimumValue": "0.02",
+                    "median": 8.355
+                },
+                "title": "Project by Estimated FSR",
+                "color": "#8D7FF8"
+            },
+            {
+                "bins": [
+                    {
+                        "min": 73,
+                        "max": 76,
+                        "count": 0,
+                        "isMedian": false
+                    },
+                    {
+                        "min": 76,
+                        "max": 79,
+                        "count": 1,
+                        "isMedian": false
+                    }
+                ],
+                "stats": {
+                    "minimumCount": 0,
+                    "maximumCount": 32,
+                    "maximumValue": "78.000",
+                    "minimumValue": "1.000",
+                    "median": "7.000"
+                },
+                "title": "Project by Storeys",
+                "color": "#F38354"
+            }
+        ]
+    }
+}
